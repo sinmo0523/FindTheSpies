@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         mNewGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Start CheatActivity
                 Intent i = new Intent(MainActivity.this, Create_room.class);
                 startActivity(i);
             }
