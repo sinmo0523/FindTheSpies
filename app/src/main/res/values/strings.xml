@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">FindTheSpy</string>
-    <string name="newgame_button">Create a New Game</string>
-    <string name="joingame_button">Join a Game</string>
-    <string name="joingame_tips">If you have a room No.</string>
+    <string name="newgame_button">CREATE A NEW GAME</string>
+    <string name="joingame_button">JOIN A GAME \n IF YOU HAVE A ROOM NO.</string>
 </resources>

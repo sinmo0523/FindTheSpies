@@ -10,7 +10,8 @@
         android:id="@+id/inputnametxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Input Name:"/>
+        android:text="Input Name:"
+        />
 
     <EditText
         android:id="@+id/inputnameedit"
@@ -23,11 +24,16 @@
         android:text="Number of Players"/>
 
 
-        <Spinner
-            android:id="@+id/spinner1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/playernumber"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/playernumber"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE ROOM"
+        android:id="@+id/createNewRoomBnt"/>
 
 
 
