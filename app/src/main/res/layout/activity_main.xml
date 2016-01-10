@@ -25,7 +25,7 @@
         android:id="@+id/newGame_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/newgame_button"
+        android:text="@string/newGame_button"
         android:layout_marginTop="90dp"
         android:layout_below="@+id/title"
         android:layout_centerHorizontal="true"/>
@@ -35,7 +35,7 @@
         android:id="@+id/joinGame_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/joingame_button"
+        android:text="@string/joinGame_button"
         android:layout_marginTop="74dp"
         android:layout_below="@+id/newGame_Button"
         android:layout_centerHorizontal="true">

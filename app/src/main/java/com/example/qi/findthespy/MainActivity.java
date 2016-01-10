@@ -5,11 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.qi.findthespy.Activity.Create_room;
+import com.example.qi.findthespy.Activity.Join_room;
 import com.parse.Parse;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button mNewGameButton;
+    private Button mJoinGameButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +33,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        mJoinGameButton = (Button)findViewById(R.id.joinGame_Button);
+        mJoinGameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Join_room.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

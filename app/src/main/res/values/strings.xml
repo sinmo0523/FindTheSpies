@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">FindTheSpy</string>
-    <string name="newgame_button">CREATE A NEW GAME</string>
-    <string name="joingame_button">JOIN A GAME \n IF YOU HAVE A ROOM NO.</string>
+    <string name="newGame_button">CREATE A NEW GAME</string>
+    <string name="joinGame_button">JOIN A GAME \n IF YOU HAVE A ROOM NO.</string>
+    <string name="joinRoomNameTxt">Please Enter Your Name.</string>
+    <string name="joinRoomPinTxt">Please Enter Room Pin Code.</string>
+    <string name="joinRoom_button">Join Room</string>
+    <string name="roomInfoTxt">Welcome join this Room!\n\nPlease ask the rest members to join this game by follow room PIN.</string>
+    <string name="roomInfo_button">Start Game!</string>
+    <string name="joinRoom_suc">Join room success!</string>
+    <string name="joinRoomWrong_roomIsFull">Failed!\n\nThe room is full!!\n\nPlease make sure the PIN-code is right or the creator input the right player number!</string>
+    <string name="joinRoomWrong_roomNotExist">Failed!\n\nThe room is not exist!!\n\nPlease make sure the PIN-code is correct!</string>
+    <string name="warning_nullPlayerName">Please input your name!</string>
+    <string name="warning_nullRoomPin">Please input the PIN-code!</string>
+    <string name="voteTxt">Vote a Spy</string>
+    <string name="voteHint">Please press the name to vote.</string>
+    <string name="warning_voteMemberLeft">Some players have not joined the room!\n\nPlease refresh the list after all players join the room!</string>
+    <string name="warning_voteMemberVoted">Fail!\n\nThis player is voted out!</string>
+    <string name="warning_vote">You have voted a spy!\n\nPlease wait a moment until all the players voted.</string>
+    <string name="warning_votedMe">Unfortunately..\n\nYou have been voted!!</string>
+    <string name="warning_votedMeBlocked">You have been voted!!\n\nYou are not allow to vote any more.\n\nYou can refresh the list to check newly game state.</string>
+    <string name="warning_voteNotFinish">Some players have not voted!\n\nPlease make sure all players voted!</string>
+    <string name="warning_someoneQuit">At lest one player quit the game.\n\nPlease recreate the room.</string>
 </resources>

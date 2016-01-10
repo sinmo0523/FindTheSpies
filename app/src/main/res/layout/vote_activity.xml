@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/voteTxt"
+        android:id="@+id/voteTxt"
+        android:layout_marginTop="53dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/roundTxt"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/voteListRefreshBtn"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voteHint"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30px"
+        android:layout_below="@+id/voteListRefreshBtn"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff0000" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:id="@+id/voteList"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="35px"
+        android:layout_below="@+id/textView2"
+        android:clickable="true"
+        android:fastScrollEnabled="true"
+        android:textFilterEnabled="false"
+        android:layout_weight="0.51" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Result"
+        android:id="@+id/voteFinishBtn"
+        android:layout_below="@+id/voteList"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

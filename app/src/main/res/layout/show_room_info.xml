@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/roomInfoTxt"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/roomInfo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PIN"
+        android:id="@+id/roomPinInfo"
+        android:layout_marginTop="33dp"
+        android:layout_gravity="center_horizontal"
+        android:textColorLink="#0634ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Spy:          "
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="33dp"
+        android:id="@+id/roomInfoSpyEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nomal:       "
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="33dp"
+        android:id="@+id/roomInfoNormalEdit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roomInfo_button"
+        android:id="@+id/roomInfoBnt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="73dp"/>
+
+</LinearLayout>
