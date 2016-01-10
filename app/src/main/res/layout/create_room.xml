@@ -5,39 +5,60 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activity.Create_room"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#fbde76">
 
-    <TextView
-        android:id="@+id/inputNameTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="53dp"
-        android:layout_marginLeft="10dp"
-        android:text="Input Your Name:"/>
-
-    <EditText
-        android:id="@+id/inputNameEdit"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:maxLines="1" />
+        android:layout_weight="0.29"
+        android:background="#fcfaad">
 
-    <TextView
-        android:id="@+id/playerNumTxt"
-        android:layout_width="347dp"
+        <TextView
+            android:id="@+id/inputNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="10dp"
+            android:text="Input Your Name:"
+            android:layout_gravity="left|top" />
+
+        <EditText
+            android:id="@+id/inputNameEdit"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:layout_marginBottom="20dp"
+            android:textSize="40px"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Number of Players"
-        android:layout_below="@+id/inputNameEdit"
-        android:layout_marginTop="83dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_weight="0.36"
+        android:background="#f8ec77">
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="57dp"
-        android:layout_height="47dp"
-        android:entries="@array/playerNumber"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.08" />
+        <TextView
+            android:id="@+id/playerNumTxt"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:text="Number of Players"
+            android:layout_below="@+id/inputNameEdit"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="40px"
+            android:layout_gravity="left|top" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="57dp"
+            android:layout_height="47dp"
+            android:entries="@array/playerNumber"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="0.08" />
+    </FrameLayout>
 
     <Button
         android:layout_width="wrap_content"

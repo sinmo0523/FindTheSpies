@@ -131,8 +131,10 @@ public class Game_result extends AppCompatActivity {
                     public void done(ParseObject user, ParseException e) {
                         if (user.getString("uRole").equals(winner)) {
                             gameResult.setText("You Win!!!");
+                            getWindow().setBackgroundDrawableResource(R.mipmap.winner_background);
                         } else {
                             gameResult.setText("You Lose...");
+                            getWindow().setBackgroundDrawableResource(R.mipmap.loser_background);
                         }
                     }
                 });

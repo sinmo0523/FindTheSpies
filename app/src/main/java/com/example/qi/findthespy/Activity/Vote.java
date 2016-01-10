@@ -48,7 +48,6 @@ public class Vote extends AppCompatActivity {
         Intent intent = getIntent();
         String info = intent.getStringExtra("data");
 
-        System.out.println(info + "11111111111111111111111111111111111");
 
         final UserInfoHandler userInfo = new UserInfoHandler();
         final RoomInfoHandler roomInfo = new RoomInfoHandler();
@@ -88,7 +87,6 @@ public class Vote extends AppCompatActivity {
         playerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                System.out.println(voted + "^^^^^^^^^^^!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 if (voted == 0) {
                     final String selectedItem = playerListAdapter.getItem(position);
                     if (selectedItem.length() > 7) {
@@ -97,6 +95,7 @@ public class Vote extends AppCompatActivity {
                                     .setMessage(R.string.warning_voteMemberVoted)
                                     .setPositiveButton("OK", null)
                                     .show();
+
                         }
                     } else {
                         new AlertDialog.Builder(Vote.this).setTitle("Warning")

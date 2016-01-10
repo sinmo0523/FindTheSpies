@@ -2,7 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#fcfaad">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,7 +16,8 @@
         android:text="@string/voteTxt"
         android:id="@+id/voteTxt"
         android:layout_marginTop="53dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="#4058df" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,11 +28,12 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="33dp"
         android:text="Refresh"
         android:layout_marginLeft="20dp"
         android:id="@+id/voteListRefreshBtn"
-        android:layout_weight="0.03" />
+        android:background="#d4fac8"
+        android:textColor="#8282fe" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,25 +48,34 @@
         android:textColor="#ff0000" />
 
 
-    <ListView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="291dp"
-        android:id="@+id/voteList"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textSize="35px"
-        android:layout_below="@+id/textView2"
-        android:clickable="true"
-        android:fastScrollEnabled="true"
-        android:textFilterEnabled="false"
-        android:layout_weight="0.51" />
+        android:layout_height="wrap_content"
+        android:background="#f3c48e">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:id="@+id/voteList"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="35px"
+            android:layout_below="@+id/textView2"
+            android:clickable="true"
+            android:fastScrollEnabled="true"
+            android:textFilterEnabled="false"
+            android:layout_weight="0.51" />
+
+    </FrameLayout>
+
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="134dp"
         android:layout_height="wrap_content"
         android:text="Check Result"
         android:id="@+id/voteFinishBtn"
         android:layout_below="@+id/voteList"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="#d4fac8"
+        android:textColor="#8282fe" />
 
 </LinearLayout>

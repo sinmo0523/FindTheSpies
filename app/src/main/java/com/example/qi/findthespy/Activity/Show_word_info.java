@@ -83,9 +83,10 @@ public class Show_word_info extends AppCompatActivity {
                                                     userIdTxt.setText(user.getObjectId());
                                                     if (user.getString("uRole").equals("Spy")) {
                                                         wordTxt.setText(spyWord);
-                                                        voteButton.setClickable(true);
+                                                        wordTxt.setTextColor(0xFFDE3970);
                                                     } else if (user.getString("uRole").equals("Normal")) {
                                                         wordTxt.setText(normalWord);
+                                                        wordTxt.setTextColor(0xFFDE3970);
                                                         voteButton.setClickable(true);
                                                     } else {
                                                         wordTxt.setText("Error-role");

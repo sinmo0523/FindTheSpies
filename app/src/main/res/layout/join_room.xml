@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/joinroom_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
 
     <TextView
         android:id="@+id/inputJoinNameTxt"
@@ -45,6 +50,8 @@
         android:text="@string/joinRoom_button"
         android:id="@+id/joinRoomBnt"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="53dp"/>
+        android:layout_marginTop="53dp"
+        android:textColor="#8282fe"
+        android:background="#d4fac8" />
 
 </LinearLayout>
