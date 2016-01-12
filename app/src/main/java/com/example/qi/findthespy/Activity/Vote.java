@@ -163,7 +163,7 @@ public class Vote extends AppCompatActivity {
                                 }
                                 playerList.setAdapter(playerListAdapter);
                             }
-                            if (players.size() != (nNum + sNum - 1)) {
+                            if (players.size() != (nNum + sNum - round)) {
                                 new AlertDialog.Builder(Vote.this).setTitle("Warning")
                                         .setMessage(R.string.warning_voteMemberLeft)
                                         .setPositiveButton("OK", null).show();
